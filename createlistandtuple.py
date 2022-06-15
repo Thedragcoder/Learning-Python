@@ -1,0 +1,5 @@
+value = input("Enter some comma saperated data: ")
+x = value.split(",")
+print(x)
+y = tuple(x)
+print(y)
