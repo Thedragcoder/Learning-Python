@@ -1,0 +1,17 @@
+# we use deque here because if we want to erase the first data then all the other datas present have to change
+# the position which creates adverse effect on the performance. for example if you have 1001 item in in a list and
+# you have to remove the first item the other 1000 items have to change their place in the memory
+# queues is another data structures which works of FIFO principle
+from collections import deque
+import queue
+queue = deque([])
+queue.append(1)
+queue.append(2)
+queue.append(3)
+queue.append(4)
+queue.append(5)
+queue.append(6)
+queue.popleft()
+print(queue)
+if not queue:
+    print('empty')
